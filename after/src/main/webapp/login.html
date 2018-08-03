@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Login page</title>
+    </head>
+    <body>
+        <h1>Simple Login Page</h1>
+        <form name="login">
+            Username<input id="username" type="text" name="userid"/><br>
+            Password<input id="password" type="password" name="pswrd"/><br>
+            <input type="button" onclick="check(this.form)" id="login" value="Login"/><br>
+            <input type="reset" value="Cancel"/>
+        </form>
+        <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value != "bhuvijayerra@gmail.com" ) {
+                	alert("Invalid  Username")/*opens the target page while Id & password matches*/
+                }
+                else if(form.pswrd.value != "yerra@123"){
+                	alert("Invalid Password")
+                }
+                else if(form.userid.value != "bhuvijayerra@gmail.com" && form.pswrd.value != "yerra@123"){
+                	alert("Error in both username and password")
+                }
+                else {
+                	//window.open('target.html')
+                    /*displays error message*/
+                }
+            }
+        </script>
+    </body>
+</html>
